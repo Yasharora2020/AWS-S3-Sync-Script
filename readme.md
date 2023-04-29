@@ -22,6 +22,7 @@ Follow these steps to install and configure the script:
 
 
 4. Edit the s3_sync.py file to set the local_directory and bucket_name variables to the appropriate values for your project.
+    
     #!/bin/bash
 
     source /path/to/your/virtualenv/bin/activate
@@ -33,7 +34,7 @@ Follow these steps to install and configure the script:
 
 5. Create a new shell script called run_script.sh:
 
-Replace /path/to/your/virtualenv and /path/to/your/s3_sync.py with the correct paths for your project. This script activates the virtual environment and then runs the s3_sync.py script.
+    Replace /path/to/your/virtualenv and /path/to/your/s3_sync.py with the correct paths for your project. This script activates the virtual environment and then runs the s3_sync.py script.
 
 6. Make the shell script executable:
     chmod +x run_script.sh
@@ -46,7 +47,7 @@ Replace /path/to/your/virtualenv and /path/to/your/s3_sync.py with the correct p
 8. Add the following line to the crontab file:
     * * * * * /path/to/your/run_script.sh >> /path/to/your/s3_sync.log 2>&1
 
-Replace /path/to/your/run_script.sh and /path/to/your/s3_sync.log with the correct paths for your project.
+    Replace /path/to/your/run_script.sh and /path/to/your/s3_sync.log with the correct paths for your project.
 
 9. Save the crontab file and exit the editor.
 
