@@ -3,7 +3,7 @@ import boto3
 import logging
 from pathlib import Path
 
-log_filename = '/Users/personal/Desktop/aws-sync/s3_sync.log'
+log_filename = '/Users/personal/Desktop/aws-s3-sync-script/s3_sync.log'
 logging.basicConfig(filename=log_filename, level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 
 
